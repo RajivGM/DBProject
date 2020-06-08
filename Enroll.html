@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ENROLL</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!--<link rel="stylesheet" href="STYLE/enroll.css">-->
+</head>
+<style>
+    #main-section{
+        overflow-x:hidden;
+    }
+
+    @font-face {
+    font-family: 'eliantoregular';
+    src: url('STYLE/Fonts/elianto-regular-webfont.woff2') format('woff2'),
+         url('STYLE/Fonts/elianto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.jumo-heading{
+    padding: 0;
+}
+
+/* rgb(201, 196, 196) */
+.jumbotron{
+    font-family: 'eliantoregular',serif;
+    color:rgb(201, 196, 196);
+    background-color: black;
+    text-align: center;
+    padding: 40px 0;
+    margin:0;
+}
+
+.enroll-page{
+    background-color: rgb(201, 196, 196);
+    text-align:center;
+    padding-left:15%;
+    padding-right:15%;
+}
+#form-col{
+    margin:10% auto;
+    padding: 5%;
+    background-color: white;
+    position:relative;
+    border-radius: 25px;
+}
+
+.form-ele{
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+}
+
+.data{
+    width:50%;
+}
+
+.btn{
+    position: absolute;
+    top:90%;
+    right:15%;
+}
+.description{
+    position: relative;
+    margin-top:20px;
+}
+/* .company-description{
+    position:relative;
+    bottom:25px;;
+} */
+
+@media screen and (max-width: 992px)  {
+    .enroll-page{
+    background-color: rgb(201, 196, 196);
+    text-align:center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.form-ele{
+    display: inline-block;
+    width: 70%;
+    text-align: left;
+}
+.data{
+    width:70%;
+}
+}
+</style>
+<body>
+    <section id="main-section">
+        <div class="jumo-heading container-fluid">
+            <div class="row">
+                 <div class="col">
+                        <div class="jumbotron jumbotron-fluid">
+                                <div class="container">
+                                  <h1 class="display-4">APTHAMITRA</h1>
+                                  <p class="lead">JOIN OUR FAMILY</p>
+                                </div>
+                        </div>
+                 </div>
+            </div>
+        </div>
+
+     <section class="enroll-page" id="enroll-section">
+            <div id="form" class="container-fluid">
+                    <div class="row">
+                        <div id="form-col" class="col-lg-10 col-md-12">
+                            <span class="form-ele email-adress">Email:</span>
+                            <br/><input class="data email-data" type="email"><br/><br/>
+                            <span class="form-ele password">Password:</span><br/><input class="data password-data" type="password"><br/><br/>
+                            <span class="form-ele first-name">First Name:</span><br/><input class="data first-data" type="text"><br/><br/>
+                            <span class="form-ele last-name">Last Name:</span><br/><input class="data last-data" type="text"><br/><br/>
+                            <span class="form-ele last-name">Address:</span><br/><input class="data address-data" type="text"><br/><br/>
+                            <span style="padding-left;1px" class="form-ele location">Location:</span><br/>
+                            <select id="location-data" class="data">
+                                    <option value="bangalore">Bangalore</option>
+                                    <option value="delhi">Delhi</option>
+                                    <option value="mumbai">Mumbai</option>
+                                    <option value="Mysore">Mysore</option>
+                            </select>
+
+                            <div class="description">
+                                    <span class="form-ele company-description">Company description:</span><br/>
+                                   <textarea class="data description-data"></textarea>
+                            </div>
+                            <div  id="invalid" class="data form-ele">
+                                <p ></p>
+                            </div>
+                            <br/><br/>
+                            <button id="button" type="button" class="btn btn-dark">SUBMIT</button>
+                        </div>
+                    </div>
+            </div>
+     </section>
+        <script src="ENROLLJS.js"></script>
+    </section>
+</body>
+</html>
