@@ -1,10 +1,4 @@
-<%@ page import="java.sql.*" %><%--
-  Created by IntelliJ IDEA.
-  User: PUJIT
-  Date: 12-11-2019
-  Time: 07:57 PM
-  To change this template use File | Settings | File Templates.
---%>
+<%@ page import="java.sql.*" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
     HttpSession ses=request.getSession();
